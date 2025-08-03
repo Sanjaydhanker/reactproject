@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 function Navbar() {
   return (
    <>
-   <div className='w-full h-16 bg-indigo-700 flex justify-between items-center md:px-4 px-2 '>
+   <div className='w-full h-16 bg-indigo-700 flex justify-between items-center md:px-4 px-2 fixed top-0 '>
     <div>
         <img className='w-12 h-12 cursor-pointer md:ms-10' src="https://png.pngtree.com/png-vector/20230218/ourmid/pngtree-best-product-label-badge-red-design-png-image_6607151.png" alt="" />
     </div>
@@ -20,8 +20,9 @@ function Navbar() {
           </li>
         </ul>
     </div>
-    <div>
-      <Link to="loginpage"><button className='w-24 h-10 bg-indigo-600 text-white rounded-sm hover:text-indigo-600 hover:bg-white md:block hidden  '>Login</button></Link>
+    <div className='flex gap-3'>
+      <Link to="loginpage"><button className='w-24 h-10 bg-indigo-600 text-white rounded-sm hover:text-indigo-600 hover:bg-indigo-200 md:block hidden  '>Login</button></Link>
+       <Link to="registration"><button className='w-24 h-10 bg-indigo-600 text-white rounded-sm hover:text-indigo-600 hover:bg-indigo-200 md:block hidden  '>Registration</button></Link>
     </div>
     <div className='md:hidden text-4xl text-white'>
       <Link to="">&#8801;</Link>
