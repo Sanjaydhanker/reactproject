@@ -22,7 +22,7 @@ function Navbar() {
     </div>
     <div className='flex gap-3'>
       <Link to="loginpage"><button className='w-24 h-10 bg-indigo-600 text-white rounded-sm hover:text-indigo-600 hover:bg-indigo-200 md:block hidden  '>Login</button></Link>
-       <Link to="registration"><button className='w-24 h-10 bg-indigo-600 text-white rounded-sm hover:text-indigo-600 hover:bg-indigo-200 md:block hidden  '>Registration</button></Link>
+       <Link to="registrationpage"><button className='w-24 h-10 bg-indigo-600 text-white rounded-sm hover:text-indigo-600 hover:bg-indigo-200 md:block hidden  '>Registration</button></Link>
     </div>
     <div className='md:hidden text-4xl text-white'>
       <Link to="">&#8801;</Link>
